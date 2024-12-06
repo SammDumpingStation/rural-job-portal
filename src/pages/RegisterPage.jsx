@@ -115,15 +115,14 @@ const RegisterPage = () => {
           </div>
         </form>
 
-        <p class="mt-10 text-center text-sm/6 text-gray-500">
-          Already Registered?
-          <NavLink
-            to="/sign-in"
-            class="ml-2 font-bold text-indigo-600 hover:text-indigo-500"
-          >
-            Login Here!
+        <div className="flex flex-row justify-center items-center mt-10">
+          <p class="text-center text-sm/6 text-gray-500">Already Registered?</p>
+          <NavLink to="/sign-in">
+            <p class="ml-2 font-semibold text-indigo-600 hover:text-indigo-500">
+              Login Here!
+            </p>
           </NavLink>
-        </p>
+        </div>
       </div>
     </div>
   );

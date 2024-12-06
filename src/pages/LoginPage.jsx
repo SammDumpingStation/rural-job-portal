@@ -2,7 +2,6 @@ import React from "react";
 import logo from "../assets/images/logo.jpg";
 import { NavLink } from "react-router-dom";
 
-
 const LoginPage = () => {
   return (
     <div class="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8 mx-auto">
@@ -77,15 +76,14 @@ const LoginPage = () => {
           </div>
         </form>
 
-        <p class="mt-10 text-center text-sm/6 text-gray-500">
-          No account?
-          <NavLink
-            to="/register"
-            class="ml-2 text-indigo-600 hover:text-indigo-500 font-bold"
-          >
-            Register Here!
+        <div className="flex flex-row justify-center items-center mt-10">
+          <p class="text-center text-sm/6 text-gray-500">No account?</p>
+          <NavLink to="/register">
+            <p class="ml-2 font-semibold text-indigo-600 hover:text-indigo-500">
+              Register Here!
+            </p>
           </NavLink>
-        </p>
+        </div>
       </div>
     </div>
   );
