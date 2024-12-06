@@ -80,8 +80,8 @@ const LoginPage = () => {
         <p class="mt-10 text-center text-sm/6 text-gray-500">
           No account?
           <NavLink
-            href="/register"
-            class="ml-2 font-semibold text-indigo-600 hover:text-indigo-500"
+            to="/register"
+            class="ml-2 text-indigo-600 hover:text-indigo-500 font-bold"
           >
             Register Here!
           </NavLink>
