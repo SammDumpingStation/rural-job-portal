@@ -3,7 +3,6 @@ import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import { createClient } from "@supabase/supabase-js";
 
-
 // Safely get Supabase credentials
 const supabaseUrl = import.meta.env.VITE_SUPABASE_URL;
 const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY;
@@ -133,17 +132,17 @@ const AddJobPage = ({ addJobSubmit }) => {
                 value={salary}
                 onChange={(e) => setSalary(e.target.value)}
               >
-                <option value="Under $50K">Under $50K</option>
-                <option value="$50K - 60K">$50K - $60K</option>
-                <option value="$60K - 70K">$60K - $70K</option>
-                <option value="$70K - 80K">$70K - $80K</option>
-                <option value="$80K - 90K">$80K - $90K</option>
-                <option value="$90K - 100K">$90K - $100K</option>
-                <option value="$100K - 125K">$100K - $125K</option>
-                <option value="$125K - 150K">$125K - $150K</option>
-                <option value="$150K - 175K">$150K - $175K</option>
-                <option value="$175K - 200K">$175K - $200K</option>
-                <option value="Over $200K">Over $200K</option>
+                <option value="Under ₱15K">Under ₱15K</option>
+                <option value="₱15K - ₱20K">₱15K - ₱20K</option>
+                <option value="₱20K - ₱25K">₱20K - ₱25K</option>
+                <option value="₱25K - ₱30K">₱25K - ₱30K</option>
+                <option value="₱30K - ₱35K">₱30K - ₱35K</option>
+                <option value="₱35K - ₱40K">₱35K - ₱40K</option>
+                <option value="₱40K - ₱50K">₱40K - ₱50K</option>
+                <option value="₱50K - ₱60K">₱50K - ₱60K</option>
+                <option value="₱60K - ₱70K">₱60K - ₱70K</option>
+                <option value="₱70K - ₱80K">₱70K - ₱80K</option>
+                <option value="Over ₱80K">Over ₱80K</option>
               </select>
             </div>
 
@@ -156,7 +155,7 @@ const AddJobPage = ({ addJobSubmit }) => {
                 id="location"
                 name="location"
                 className="border rounded w-full py-2 px-3 mb-2"
-                placeholder="Company Location"
+                placeholder="Location"
                 required
                 value={location}
                 onChange={(e) => setLocation(e.target.value)}
