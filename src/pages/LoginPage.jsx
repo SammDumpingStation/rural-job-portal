@@ -1,5 +1,7 @@
 import React from "react";
 import logo from "../assets/images/logo.jpg";
+import { NavLink } from "react-router-dom";
+
 
 const LoginPage = () => {
   return (
@@ -77,12 +79,12 @@ const LoginPage = () => {
 
         <p class="mt-10 text-center text-sm/6 text-gray-500">
           No account?
-          <a
+          <NavLink
             href="/register"
             class="ml-2 font-semibold text-indigo-600 hover:text-indigo-500"
           >
             Register Here!
-          </a>
+          </NavLink>
         </p>
       </div>
     </div>

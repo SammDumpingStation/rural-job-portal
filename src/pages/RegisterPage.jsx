@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import logo from "../assets/images/logo.jpg";
 
 const RegisterPage = () => {
@@ -116,12 +117,12 @@ const RegisterPage = () => {
 
         <p class="mt-10 text-center text-sm/6 text-gray-500">
           Already Registered?
-          <a
+          <NavLink
             href="/sign-in"
             class="ml-2 font-semibold text-indigo-600 hover:text-indigo-500"
           >
             Login Here!
-          </a>
+          </NavLink>
         </p>
       </div>
     </div>
