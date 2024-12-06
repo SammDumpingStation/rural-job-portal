@@ -12,6 +12,8 @@ import NotFoundPage from "./pages/NotFoundPage";
 import JobPage, { jobLoader } from "./pages/JobPage";
 import AddJobPage from "./pages/AddJobPage";
 import EditJobPage from "./pages/EditJobPage";
+import LoginPage from "./pages/LoginPage";
+import RegisterPage from "./pages/RegisterPage";
 
 // Initialize Supabase client
 const supabase = createClient(
@@ -112,6 +114,9 @@ const App = () => {
           element={<JobPage deleteJob={deleteJob} />}
           loader={supabaseJobLoader}
         />
+        <Route path="/sign-in" element={<LoginPage />} />
+        <Route path="/register" element={<RegisterPage />} />
+
         <Route path="*" element={<NotFoundPage />} />
       </Route>
     )
