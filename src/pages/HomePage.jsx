@@ -6,7 +6,10 @@ import ViewAllJobs from '../components/ViewAllJobs';
 const HomePage = () => {
   return (
     <>
-      <Hero />
+      <Hero
+        title="Browse Local Jobs"
+        subtitle="Look for work in farming, teaching, health, and more."
+      />
       <HomeCards />
       <JobListings isHome={true} />
       <ViewAllJobs />
